@@ -18,10 +18,10 @@ List of Business Questions and Visualizations Associated:
 
 The Entity-Relationship Diagram (ERD) for the job market database highlights these key one-to-one relationships:
 
-CompanyDetails and Job: Each record in CompanyDetails relates to one or more records in Job, but each Job record is associated with only one record in CompanyDetails.
-SalaryRange and Job: Each SalaryRange record corresponds to one or more Job records, but each Job is linked to only one SalaryRange.
-Location and Job: Every Location record is associated with one or more Job records, with each Job record having a unique Location.
-WorkType and Job: Each WorkType record can be linked to multiple Job records, while each Job is associated with a single WorkType.
-ExperienceLevel and Job: Every ExperienceLevel record can correspond to multiple Job records, but each Job record is linked to just one ExperienceLevel.
+1. CompanyDetails and Job: Each record in CompanyDetails relates to one or more records in Job, but each Job record is associated with only one record in CompanyDetails.
+2. SalaryRange and Job: Each SalaryRange record corresponds to one or more Job records, but each Job is linked to only one SalaryRange.
+3. Location and Job: Every Location record is associated with one or more Job records, with each Job record having a unique Location.
+4. WorkType and Job: Each WorkType record can be linked to multiple Job records, while each Job is associated with a single WorkType.
+5. ExperienceLevel and Job: Every ExperienceLevel record can correspond to multiple Job records, but each Job record is linked to just one ExperienceLevel.
 
 This comprehensive analysis offers a multi-dimensional view of the job market, highlighting crucial trends and patterns that are essential for understanding current employment scenarios. This project not only aids job seekers and employers but also provides valuable insights for policy-makers and economists.
