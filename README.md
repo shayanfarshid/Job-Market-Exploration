@@ -17,3 +17,23 @@ List of Business Questions and Visualizations Associated:
 10. Identify job titles and their respective companies for jobs with salaries above the average salary for their respective industries. 
 
 This comprehensive analysis offers a multi-dimensional view of the job market, highlighting crucial trends and patterns that are essential for understanding current employment scenarios. This project not only aids job seekers and employers but also provides valuable insights for policy-makers and economists.
+
+**Conversion of Dataset into Tables**
+
+Understanding the Dataset:
+The first step was to examine the job_postings.csv dataset thoroughly. This involved identifying the key columns and understanding the type of data each column represents. Essential fields like job_id, company_id, title, description, salary range, and location were noted, as these form the core of our database structure.
+
+Database Schema Design:
+Based on the dataset analysis, I designed a relational database schema to efficiently store and manage the data. The schema comprised several tables - Job, Company, SalaryRange, Location, WorkType, and ExperienceLevel - reflecting the entities identified in the dataset.
+
+Data Type Selection:
+For each column in these tables, I selected appropriate SQL data types. For instance, numerical identifiers like job_id and company_id were assigned the INT type, textual information such as title and description were assigned VARCHAR or TEXT, and salary fields were set as DECIMAL to accommodate financial data.
+
+Normalization and Integrity:
+To ensure data integrity and reduce redundancy, normalization principles were applied. This included dividing the data into logical tables and defining primary keys (such as job_id for the Job table) and foreign keys (like company_id in the Job table referencing the Company table).
+
+Data Import Process:
+The actual conversion involved importing data from the CSV file into the MySQL database. Tools and functions within MySQL were utilized to map each column in the CSV file to its corresponding column in the database tables. Special attention was paid to handling null values and ensuring that data formats in the CSV file matched the defined data types in the SQL tables.
+
+Creating Relationships:
+Finally, relationships between tables were established as per the ER Diagram. This included defining one-to-many and many-to-one relationships between Jobs and other entities like Companies, SalaryRange, etc., ensuring a relational structure among these entities.
