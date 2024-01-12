@@ -16,4 +16,12 @@ List of Business Questions and Visualizations Associated:
 9. Calculate the ratio of job postings to the number of companies in each industry (job density) and determine the industry with the highest job density.
 10. Identify job titles and their respective companies for jobs with salaries above the average salary for their respective industries. 
 
+The Entity-Relationship Diagram (ERD) for the job market database highlights these key one-to-one relationships:
+
+CompanyDetails and Job: Each record in CompanyDetails relates to one or more records in Job, but each Job record is associated with only one record in CompanyDetails.
+SalaryRange and Job: Each SalaryRange record corresponds to one or more Job records, but each Job is linked to only one SalaryRange.
+Location and Job: Every Location record is associated with one or more Job records, with each Job record having a unique Location.
+WorkType and Job: Each WorkType record can be linked to multiple Job records, while each Job is associated with a single WorkType.
+ExperienceLevel and Job: Every ExperienceLevel record can correspond to multiple Job records, but each Job record is linked to just one ExperienceLevel.
+
 This comprehensive analysis offers a multi-dimensional view of the job market, highlighting crucial trends and patterns that are essential for understanding current employment scenarios. This project not only aids job seekers and employers but also provides valuable insights for policy-makers and economists.
