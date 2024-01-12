@@ -1,0 +1,83 @@
+**Conversion of Dataset into Tables**
+
+Understanding the Dataset:
+The first step was to examine the job_postings.csv dataset thoroughly. This involved identifying the key columns and understanding the type of data each column represents. Essential fields like job_id, company_id, title, description, salary range, and location were noted, as these form the core of our database structure.
+
+Database Schema Design:
+Based on the dataset analysis, I designed a relational database schema to efficiently store and manage the data. The schema comprised several tables - Job, Company, SalaryRange, Location, WorkType, and ExperienceLevel - reflecting the entities identified in the dataset.
+
+Data Type Selection:
+For each column in these tables, I selected appropriate SQL data types. For instance, numerical identifiers like job_id and company_id were assigned the INT type, textual information such as title and description were assigned VARCHAR or TEXT, and salary fields were set as DECIMAL to accommodate financial data.
+
+Normalization and Integrity:
+To ensure data integrity and reduce redundancy, normalization principles were applied. This included dividing the data into logical tables and defining primary keys (such as job_id for the Job table) and foreign keys (like company_id in the Job table referencing the Company table).
+
+Data Import Process:
+The actual conversion involved importing data from the CSV file into the MySQL database. Tools and functions within MySQL were utilized to map each column in the CSV file to its corresponding column in the database tables. Special attention was paid to handling null values and ensuring that data formats in the CSV file matched the defined data types in the SQL tables.
+
+Creating Relationships:
+Finally, relationships between tables were established as per the ER Diagram. This included defining one-to-many and many-to-one relationships between Jobs and other entities like Companies, SalaryRange, etc., ensuring a relational structure among these entities.
+
+Data Importation Challenges:
+
+Challenges Encountered
+
+1. Handling Null Values: The CSV file contains null or missing values that require special handling.
+2. Foreign Key Constraints: The import process must respect foreign key constraints, which was challenging to maintain.
+3. Data Type Mismatches: Some data types in the CSV do not directly match the defined SQL data types.
+
+Solutions Implemented
+
+1. Standardizing Data Formats: Pre-processed the data using a scripting language to standardize formats.
+2. Null Value Management: Define default values in MySQL or use conditional logic during import.
+3. Assigning Foreign Key: The Foreign Key was properly assigned and maintained.
+
+
+Data Dictionary:
+
+CompanyDetails Table
+
+company_id (PK) | INT | Unique ID for each company
+company_name | VARCHAR(255) | Name of the company
+industry | VARCHAR(30) | Industry sector of the company
+description | VARCHAR(1500) | Brief description of the company
+
+SalaryRange Table
+
+salary_id (PK) | INT | Unique ID for salary range
+min_salary | DECIMAL(10, 2) | Minimum salary offered
+max_salary | DECIMAL(10, 2) | Maximum salary offered
+
+Location Table
+
+location_id (PK) | INT | Unique ID for location
+location_name | VARCHAR(255) | Name of the location
+
+WorkType Table
+
+work_type_id (PK) | INT | Unique ID for work type
+work_type_name | VARCHAR(255) | Name of the work type
+
+ExperienceLevel Table
+
+experience_level_id (PK) | INT | Unique ID for experience level
+experience_level_name | VARCHAR(255) | Name of the experience level
+
+Job Table
+
+job_id (PK) | INT | Unique identifier for each job posting
+company_id | INT | ID linking to CompanyDetails
+title | VARCHAR(255) | Job title
+description | TEXT | Detailed job description
+salary_id | INT | ID linking to SalaryRange
+location_id | INT | ID linking to Location
+work_type_id | INT | ID linking to WorkType
+experience_level_id | INT | ID linking to ExperienceLevel
+
+Cardinality:
+
+CompanyDetails to Job: One-to-Many. Each company (CompanyDetails) can have multiple job postings (Job), but each job posting is associated with only one company.
+SalaryRange to Job: One-to-Many. A particular salary range (SalaryRange) can be applicable to multiple jobs (Job), but each job is associated with only one salary range.
+Location to Job: One-to-Many. Each location (Location) can be linked to multiple job postings (Job), while each job posting is located in one specific location.
+WorkType to Job: One-to-Many. A work type (WorkType) can correspond to several job postings (Job), but each job posting has only one work type.
+ExperienceLevel to Job: One-to-Many. Each experience level (ExperienceLevel) can be relevant to multiple job postings (Job), but each job posting requires one specific experience level.
