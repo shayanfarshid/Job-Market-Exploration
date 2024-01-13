@@ -18,7 +18,7 @@ The actual conversion involved importing data from the CSV file into the MySQL d
 Creating Relationships:
 Finally, relationships between tables were established as per the ER Diagram. This included defining one-to-many and many-to-one relationships between Jobs and other entities like Companies, SalaryRange, etc., ensuring a relational structure among these entities.
 
-Data Importation Challenges:
+**Data Importation Challenges:**
 
 Challenges Encountered
 
@@ -74,7 +74,7 @@ location_id | INT | ID linking to Location
 work_type_id | INT | ID linking to WorkType
 experience_level_id | INT | ID linking to ExperienceLevel
 
-Cardinality:
+Data Cardinality:
 
 CompanyDetails to Job: One-to-Many. Each company (CompanyDetails) can have multiple job postings (Job), but each job posting is associated with only one company.
 SalaryRange to Job: One-to-Many. A particular salary range (SalaryRange) can be applicable to multiple jobs (Job), but each job is associated with only one salary range.
