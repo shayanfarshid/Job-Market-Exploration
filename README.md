@@ -1,4 +1,4 @@
-Decoding the Job Market: An In-depth Exploration
+An In-depth Exploration to the Job Market:
 
 This project aims to analyze and understand the dynamics of the job market using MySQL. It focuses on dissecting various fields such as job types, salary ranges, and company profiles. The dataset is organized into multiple tables, each representing a different dimension of the job market. It uses advanced SQL querying techniques like joins, aggregate functions, and window functions to answer specific questions about the job market. These questions aim to uncover patterns and trends that can provide valuable insights into the current state and future directions of employment opportunities. Visualizations have also been accompanied by the findings via SQL queries to answer business questions.
 
@@ -22,4 +22,9 @@ The Entity-Relationship Diagram (ERD) for the job market database highlights the
 4. WorkType and Job: Each WorkType record can be linked to multiple Job records, while each Job is associated with a single WorkType.
 5. ExperienceLevel and Job: Every ExperienceLevel record can correspond to multiple Job records, but each Job record is linked to just one ExperienceLevel.
 
+![image](https://github.com/sfarshiducdavis/Decoding-the-Job-Market-An-In-depth-Exploration-SQL-Query-with-Visualization/assets/135238084/58980648-2061-4b56-b215-090a42510cb4)
+
+
 This comprehensive analysis offers a multi-dimensional view of the job market, highlighting crucial trends and patterns that are essential for understanding current employment scenarios. This project not only aids job seekers and employers but also provides valuable insights for policy-makers and economists.
+
+
