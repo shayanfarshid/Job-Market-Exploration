@@ -24,5 +24,3 @@ The Entity-Relationship Diagram (ERD) for the job market database highlights the
 
 
 This comprehensive analysis offers a multi-dimensional view of the job market, highlighting crucial trends and patterns that are essential for understanding current employment scenarios. This project not only aids job seekers and employers but also provides valuable insights for policy-makers and economists.
-
-
