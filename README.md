@@ -1,6 +1,6 @@
 An In-depth Exploration to the Job Market:
 
-This project aims to analyze and understand the dynamics of the job market using MySQL. It focuses on dissecting various fields such as job types, salary ranges, and company profiles. The dataset is organized into multiple tables, each representing a different dimension of the job market. It uses advanced SQL querying techniques like joins, aggregate functions, and window functions to answer specific questions about the job market. These questions aim to uncover patterns and trends that can provide valuable insights into the current state and future directions of employment opportunities. Visualizations have also been accompanied by the findings via SQL queries to answer business questions.
+The goal of this project is to use MySQL to analyze and understand employment market dynamics. The data is divided into several tables, each representing a distinct aspect of the work economy. It leverages advanced SQL querying techniques such as joins, aggregate functions, and window functions to provide answers to specific job-market concerns. These questions seek to find patterns and trends that can provide useful information on the current state and future directions of job prospects. Visualizations have also been supplemented by insights obtained through SQL queries to address business concerns.
 
 List of Business Questions and Visualizations Associated:
 1. Count the number of job postings for each type of work. 
