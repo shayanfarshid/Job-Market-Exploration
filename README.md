@@ -1,6 +1,6 @@
 An In-depth Exploration to the Job Market:
 
-The goal of this project is to use MySQL to analyze and understand employment market dynamics. The data is divided into several tables, each representing a distinct aspect of the work economy. It leverages advanced SQL querying techniques such as joins, aggregate functions, and window functions to provide answers to specific job-market concerns. These questions seek to find patterns and trends that can provide useful information on the current state and future directions of job prospects. Visualizations have also been supplemented by insights obtained through SQL queries to address business concerns.
+The goal of this project is to use MySQL to analyze and understand employment market dynamics. The data is divided into several tables, each representing a distinct aspect of the work economy. It leverages advanced SQL querying techniques such as joins, aggregate functions, and window functions to provide answers to specific job-market concerns. These questions seek to find patterns and trends that can provide useful information on the current state and future directions of job prospects. Visualizations have also been supplemented by insights obtained through SQL queries to address business concerns. 
 
 List of Business Questions and Visualizations Associated:
 1. Count the number of job postings for each type of work. 
@@ -24,3 +24,4 @@ The Entity-Relationship Diagram (ERD) for the job market database highlights the
 
 
 This comprehensive analysis offers a multi-dimensional view of the job market, highlighting crucial trends and patterns that are essential for understanding current employment scenarios. This project not only aids job seekers and employers but also provides valuable insights for policy-makers and economists.
+Note: For privacy concerns, entire dataset used to run queries and generate visualizations is fictional.
