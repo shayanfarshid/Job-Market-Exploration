@@ -1,4 +1,4 @@
-An In-depth Exploration to the Job Market:
+**An In-depth Exploration to the Job Market**
 
 The goal of this project is to use MySQL to analyze and understand employment market dynamics. The data is divided into several tables, each representing a distinct aspect of the work economy. It leverages advanced SQL querying techniques such as joins, aggregate functions, and window functions to provide answers to specific job-market concerns. These questions seek to find patterns and trends that can provide useful information on the current state and future directions of job prospects. Visualizations have also been supplemented by insights obtained through SQL queries to address business concerns. 
 
